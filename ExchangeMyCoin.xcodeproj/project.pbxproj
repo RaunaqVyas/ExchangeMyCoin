@@ -14,6 +14,10 @@
 		2009ABB027BFE729003D39DA /* ExchangeMyCoin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2009ABAE27BFE729003D39DA /* ExchangeMyCoin.xcdatamodeld */; };
 		2009ABB227BFE731003D39DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2009ABB127BFE731003D39DA /* Assets.xcassets */; };
 		2009ABB527BFE731003D39DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2009ABB327BFE731003D39DA /* LaunchScreen.storyboard */; };
+		2009ABC027BFE89E003D39DA /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009ABBF27BFE89E003D39DA /* CoinManager.swift */; };
+		2009ABC227BFE8D0003D39DA /* CurrencyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009ABC127BFE8D0003D39DA /* CurrencyData.swift */; };
+		2009ABC427BFE8F9003D39DA /* ExchangeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009ABC327BFE8F9003D39DA /* ExchangeModel.swift */; };
+		2009ABC727BFEFD9003D39DA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009ABC627BFEFD9003D39DA /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		2009ABB127BFE731003D39DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2009ABB427BFE731003D39DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2009ABB627BFE731003D39DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2009ABBF27BFE89E003D39DA /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		2009ABC127BFE8D0003D39DA /* CurrencyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyData.swift; sourceTree = "<group>"; };
+		2009ABC327BFE8F9003D39DA /* ExchangeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeModel.swift; sourceTree = "<group>"; };
+		2009ABC627BFEFD9003D39DA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +68,42 @@
 			children = (
 				2009ABA527BFE729003D39DA /* AppDelegate.swift */,
 				2009ABA727BFE729003D39DA /* SceneDelegate.swift */,
-				2009ABA927BFE729003D39DA /* ViewController.swift */,
-				2009ABAB27BFE729003D39DA /* Main.storyboard */,
+				2009ABBC27BFE7DC003D39DA /* Model */,
+				2009ABBD27BFE7E6003D39DA /* View */,
+				2009ABBE27BFE7F2003D39DA /* Controller */,
 				2009ABB127BFE731003D39DA /* Assets.xcassets */,
 				2009ABB327BFE731003D39DA /* LaunchScreen.storyboard */,
 				2009ABB627BFE731003D39DA /* Info.plist */,
 				2009ABAE27BFE729003D39DA /* ExchangeMyCoin.xcdatamodeld */,
 			);
 			path = ExchangeMyCoin;
+			sourceTree = "<group>";
+		};
+		2009ABBC27BFE7DC003D39DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2009ABBF27BFE89E003D39DA /* CoinManager.swift */,
+				2009ABC127BFE8D0003D39DA /* CurrencyData.swift */,
+				2009ABC327BFE8F9003D39DA /* ExchangeModel.swift */,
+				2009ABC627BFEFD9003D39DA /* Constants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2009ABBD27BFE7E6003D39DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2009ABAB27BFE729003D39DA /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2009ABBE27BFE7F2003D39DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2009ABA927BFE729003D39DA /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2009ABC227BFE8D0003D39DA /* CurrencyData.swift in Sources */,
+				2009ABC427BFE8F9003D39DA /* ExchangeModel.swift in Sources */,
 				2009ABAA27BFE729003D39DA /* ViewController.swift in Sources */,
 				2009ABB027BFE729003D39DA /* ExchangeMyCoin.xcdatamodeld in Sources */,
 				2009ABA627BFE729003D39DA /* AppDelegate.swift in Sources */,
 				2009ABA827BFE729003D39DA /* SceneDelegate.swift in Sources */,
+				2009ABC027BFE89E003D39DA /* CoinManager.swift in Sources */,
+				2009ABC727BFEFD9003D39DA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
